@@ -1,0 +1,497 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdullah Shahid Graphic Designer</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body {
+      font-family: Arial, sans-serif;
+      background: #0e172a;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background: #111;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header .brand { font-weight: bold; font-size: 22px; }
+    nav a {
+      color: #ddd;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    nav a:hover { color: #ff6b6b; }
+    section {
+      min-height: 100vh;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 50px;
+      background-size: cover;
+      background-position: center;
+    }
+    section.active { display: flex; flex-direction: column; }
+    .overlay {
+      background: rgba(0,0,0,0.6);
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 1000px;
+      width: 100%;
+    }
+    h1,h2 { margin-bottom: 15px; }
+    p { margin: 10px 0; }
+    ul { list-style: none; margin-top: 15px; text-align:left; }
+    ul li { margin: 8px 0; }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: #ff6b6b;
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .home-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .home-content img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    }
+    .home-text {
+      max-width: 500px;
+      text-align: left;
+    }
+    footer {
+      background: #000; color: #aaa;
+      text-align: center; padding: 15px;
+    }
+    article {
+      background: #222;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 8px;
+      text-align: left;
+    }
+    article h3 { color: #ff6b6b; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">My Website Abdullah graphic designer</div>
+   <nav>
+      <a onclick="showPage('home')">Home</a>
+      <a onclick="showPage('services')">Services</a>
+      <a onclick="showPage('blog')">Blog</a>
+      <a onclick="showPage('about')">About</a>
+      <a onclick="showPage('contact')">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="active" style="background:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2000&q=80') no-repeat center/cover;">
+    <div class="overlay">
+      <h1>Welcome to My Website</h1>
+      <div class="home-content">
+    <img src="myumair.jpg" alt="myumair.jpg">
+        <div class="home-text">
+          <p>Hello! 👋 I am <strong>Abdullah Shahid</strong>, a passionate <strong>Graphic Designer</strong> who creates modern and attractive designs.</p>
+          <p>A graphic designer is a creative professional who designs visuals to communicate ideas effectively.</p>
+          <p>Explore my services, blogs, and portfolio to see how I can help bring your ideas to life.</p>
+          <a class="btn" onclick="showPage('services')">View My Services</a>
+        </div>
+        <div style="display: flex; gap: 20px; max-width: 1000px; margin: 30px auto; flex-wrap: wrap;">
+  
+  <!-- Video 1 -->
+  <div style="flex: 1; min-width: 300px; text-align: center;">
+    <h3 style="font-family: Arial, sans-serif; font-size: 24px; margin-bottom: 10px;">
+    <video width="100%" height="auto" controls style="border-radius: 12px;">
+      <source src="zubair.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <!-- Video 2 -->
+  <div style="flex: 1; min-width: 300px; text-align: center;">
+    <h3 style="font-family: Arial, sans-serif; font-size: 24px; margin-bottom: 10px;">
+    <video width="100%" height="auto" controls style="border-radius: 12px;">
+      <source src="zubair2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+</div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+
+  <!-- Services -->
+  <section id="services" style="background:#111; padding:60px 20px; color:#fff;">
+  <div style="max-width:1000px; margin:auto; text-align:center;">
+    <h2 style="font-size:36px; color:#38bdf8; margin-bottom:30px;">My Services</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;">
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="poster2.png" alt="Social Media" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3 style="color:#ff6b6b;">B.com  POSTER Graphics</h3>
+        <h3 style="color:#f9f909;">$149.99 doller</h3>
+        <p>"Digital marketing is the most effective way to highlight your business in the online world. It helps your brand reach more customers and boost sale.</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="poster3.png" alt="Logo Design" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3 style="color:#ff6b6b;">POSTER & Branding</h3>
+         <h3 style="color:#ebe40a;">$149.99 doller</h3>
+        <p>"B.Com (Bachelor of Commerce) provides a strong foundation in business, accounting, finance, and management. It opens the door to professional careers and success in the world of busines</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="BANDER.png" alt="Social Media" style="width:100%; border-radius:10px; margin-bottom:10px;">
+
+        <h3 style="color:#ff6b6b;">SCHOOL POSTER Graphics</h3>
+        <h3 style="color:#ebe40a;">$99.99 doller</h3>
+        <p>Education is the key to a brighter future – join our school today!"</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="poster.png" alt="Social Media" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3 style="color:#ff6b6b;">digital marketing Design</h3>
+        <h3 style="color:#ebe40a;">$149.99 doller</h3>
+        <p>"Grow your business with smart Digital Marketing solutions.
+Reach more customers, boost sales, and build your brand online!"</p>
+      </div>
+      
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="poster4.png" alt="Social Media" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3 style="color:#ff6b6b;">home sale design</h3>
+         <h3 style="color:#ebe40a;">$119.99 doller</h3>
+        <p>Find your dream home today at the best price.
+Safe, trusted, and hassle-free home buying experience!"</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="poster5.png" alt="Social Media" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3 style="color:#ff6b6b;">dog tarcing design</h3>
+         <h3 style="color:#ebe40a;">$199.99 doller</h3>
+        <p>"Train your dog with love and fun.
+Build a loyal, happy, and healthy companion!".</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="poster6.png" alt="Social Media" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3 style="color:#ff6b6b;">logo egla design</h3>
+        <h3 style="color:#ebe40a;">$99.99 doller</h3>
+        <p>"Soar high like the mighty eagle.
+Freedom, strength, and vision in every flight!"</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="poster7.png" alt="Social Media" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3 style="color:#ff6b6b;">business card design</h3>
+        <h3 style="color:#ebe40a;">$99.99 doller</h3>
+        <p>Your Name – Professional & Reliable.
+Connecting Ideas, Building Success!".</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="poster8.png" alt="Social Media" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3 style="color:#ff6b6b;">logo design </h3>
+         <h3 style="color:#ebe40a;">$99.99 doller</h3>
+        <p>Creative logos that make your brand stand out.
+Unique, professional, and memorable designs for your business!</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="poster0.png" alt="Social Media" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3 style="color:#ff6b6b;">SCHOOL POSTER Graphics</h3>
+        <h3 style="color:#ebe40a;">$99.99 doller</h3>
+        <p>Eye-catching posts, ads, and stories for Facebook, Instagram, and more.</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="poster9.png" alt="Social Media" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3 style="color:#ff6b6b;">SCHOOL POSTER Graphics</h3>
+        <h3 style="color:#ebe40a;">$99.99 doller</h3>
+        <p>Eye-catching posts, ads, and stories for Facebook, Instagram, and more.</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="poster11.png" alt="Social Media" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3 style="color:#ff6b6b;">SCHOOL POSTER Graphics</h3>
+         <h3 style="color:#ebe40a;">$99.99 doller</h3>
+        <p>Eye-catching posts, ads, and stories for Facebook, Instagram, and more.</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="poster12.png" alt="Social Media" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3 style="color:#ff6b6b;">SCHOOL POSTER Graphics</h3>
+         <h3 style="color:#ebe40a;">$99.99 doller</h3>
+        <p>Eye-catching posts, ads, and stories for Facebook, Instagram, and more.</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="poster13.png" alt="Social Media" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3 style="color:#ff6b6b;">SCHOOL POSTER Graphics</h3>
+         <h3 style="color:#ebe40a;">$99.99 doller</h3>
+        <p>Eye-catching posts, ads, and stories for Facebook, Instagram, and more.</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="poster14.png" alt="Social Media" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3 style="color:#ff6b6b;">SCHOOL POSTER Graphics</h3>
+          <h3 style="color:#ebe40a;">$99.99 doller</h3>
+        <p>Eye-catching posts, ads, and stories for Facebook, Instagram, and more.</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="poster15.png" alt="Social Media" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3 style="color:#ff6b6b;">SCHOOL POSTER Graphics</h3>
+          <h3 style="color:#ebe40a;">$99.99 doller</h3>
+        <p>Eye-catching posts, ads, and stories for Facebook, Instagram, and more.</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="poster16.png" alt="Social Media" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3 style="color:#ff6b6b;">SCHOOL POSTER Graphics</h3>
+        <h3 style="color:#ebe40a;">$99.99 doller</h3>
+        <p>Eye-catching posts, ads, and stories for Facebook, Instagram, and more.</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="poster17.jpg" alt="Social Media" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3 style="color:#ff6b6b;">SCHOOL POSTER Graphics</h3>
+        <h3 style="color:#ebe40a;">$99.99 doller</h3>
+        <p>Eye-catching posts, ads, and stories for Facebook, Instagram, and more.</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="poster18.png" alt="Social Media" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3 style="color:#ff6b6b;">SCHOOL POSTER Graphics</h3>
+        <h3 style="color:#ebe40a;">$99.99 doller</h3>
+        <p>Eye-catching posts, ads, and stories for Facebook, Instagram, and more.</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="poster19.png" alt="Social Media" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3 style="color:#ff6b6b;">SCHOOL POSTER Graphics</h3>
+        <h3 style="color:#ebe40a;">$99.99 doller</h3>
+        <p>Eye-catching posts, ads, and stories for Facebook, Instagram, and more.</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:20px; transition:0.3s;">
+        <img src="poster20.png" alt="Social Media" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3 style="color:#ff6b6b;">SCHOOL POSTER Graphics</h3>
+        <h3 style="color:#ebe40a;">$99.99 doller</h3>
+        <p>Eye-catching posts, ads, and stories for Facebook, Instagram, and more.</p>
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+<style>
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.service-card {
+  background: #222;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+.service-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  background: #333;
+}
+</style>
+
+      <a class="btn" onclick="showPage('contact')">Book a Service</a>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog" style="background:#1a1a1a;">
+    <div class="overlay">
+      <h2>Our Blog</h2>
+      <article>
+<h1>Top Graphic Design Trends  Future of Creative Designc</h1>
+<h2>Introduction</h2>
+<img src="myimage2.jpg" alt="myimage.jpg">
+ِِِِِِِaِbdullah Graphic design has always been at the forefront of visual communication, shaping how brands, creators, and businesses connect with audiences. As we step into 2025, new technologies, shifting consumer preferences, and evolving creative tools are driving bold and innovative design trends. For designers, keeping up with these changes is essential not only to stay relevant but also to stand out in a competitive market.
+
+This article explores the top graphic design trends 2025, how the industry is growing, and what designers can expect in the future. Whether you are a student, a freelancer, or an experienced designer, these insights will help you stay inspired and adapt your creative approach to modern demands.
+ <h2>Is the graphic design industry growing</h2>
+The graphic design industry is not just growing—it is transforming. The demand for skilled designers continues to rise, especially in digital-first spaces such as social media, web design, and e-commerce. With more businesses shifting online, design has become a crucial factor in attracting and retaining customers.
+
+According to industry reports, global spending on design services is increasing steadily. Companies invest in branding, visual identity, and digital campaigns to stand out. The rise of user experience (UX) and user interface (UI) design is also pushing the boundaries of traditional graphic design.
+
+Moreover, the freelance design economy is expanding. Platforms like Fiverr, Upwork, and 99designs have made it easier for creatives to connect with clients worldwide. This trend proves that graphic design is not only growing but also becoming more accessible as a career choice for new talent.
+
+
+<h2>Future graphic design trends</h2>
+<img src="myimage4.jpg" alt="myimage.jpg">
+The future of graphic design is deeply tied to technology and cultural movements. Designers are increasingly blending creativity with innovation, resulting in unique trends:
+
+* **AI-powered creativity**: Artificial intelligence tools such as MidJourney and Adobe Firefly are enabling faster concept generation. Designers now collaborate with AI to produce visuals, though human creativity remains irreplaceable.
+* **Sustainable design**: With growing environmental awareness, brands are demanding eco-friendly visual strategies. Expect more minimalism, recyclable packaging graphics, and nature-inspired palettes.
+* **Motion graphics**: Video-based platforms like TikTok and Instagram Reels are fueling the demand for animated visuals, making motion design a key trend.
+* **Augmented reality (AR) design**: AR filters, virtual try-ons, and immersive ads are pushing designers to create interactive experiences that go beyond static graphics.
+
+These trends suggest that the future will be more dynamic, tech-driven, and consumer-focused.
+
+<h2>3D design trends</h2>
+
+
+
+Three-dimensional design is no longer niche—it’s mainstream. Thanks to advanced tools like Blender, Cinema 4D, and Adobe Dimension, 3D visuals are widely used in branding, advertising, and product mockups.
+
+In 2025, expect to see:
+
+* **Hyper-realistic 3D visuals**: From digital fashion to product marketing, 3D rendering provides lifelike experiences that traditional photography sometimes cannot achieve.
+* **Abstract 3D art**: Bold, surreal, and imaginative 3D designs are being embraced by brands looking to stand out.
+* **3D typography**: Text is becoming more than just words—it’s being modeled, animated, and integrated into interactive spaces.
+* **Mixed reality applications**: Designers are combining 3D graphics with AR and VR, creating immersive experiences for games, apps, and digital campaigns.
+
+Practical tip: Learning 3D design software can open new opportunities and help you stay ahead in this fast-evolving space.
+
+<h2>What are the latest graphic design trends</h2>
+<img src="myimage.jpg" alt="myimage.jpg">
+
+The latest graphic design trends reflect a mix of nostalgia, innovation, and cultural awareness. In 2025, these are the most visible design directions:
+
+* **Bold typography**: Oversized fonts, experimental lettering, and kinetic type are dominating digital ads and websites.
+* **Retro-futurism**: Designers are blending futuristic tech aesthetics with retro color schemes and patterns.
+* **Minimalism 2.0**: Simplicity is still key, but now with subtle gradients, warm tones, and softer edges to create a welcoming feel.
+* **Inclusive design**: Representation matters more than ever. Brands are ensuring their visuals reflect diversity, equity, and accessibility.
+* **AI and human collaboration**: Rather than replacing designers, AI is helping them brainstorm faster and refine creative output.
+
+Each trend reflects not only aesthetics but also society’s changing values and technological advancements.
+
+<h2>Best graphic design trends 2025</h2>
+<img src="myimage3.jpg" alt="myimage.jpg">
+While there are many directions designers can explore, some trends are proving to be the most impactful in 2025:
+
+1. **AI-enhanced workflows** – AI won’t replace designers, but it will streamline brainstorming, mood board creation, and early drafts.
+2. **Maximalism** – After years of minimalism, designers are embracing louder, bolder, and more colorful layouts.
+3. **Interactive experiences** – From scrolling effects on websites to interactive infographics, engagement-focused design is key.
+4. **Custom illustrations** – Hand-drawn and unique illustrations are gaining popularity over stock imagery to add personality.
+5. **Immersive branding** – Brands are now creating cohesive experiences across digital, physical, and virtual platforms.
+
+Practical tip: Designers should focus on adaptability. Trends change quickly, so mastering versatile skills such as typography, motion design, and 3D graphics ensures long-term success.
+<h2>Conclusion</h2>
+Graphic design in 2025 is an exciting mix of technology, creativity, and culture. The industry is growing rapidly, and designers who embrace trends like AI collaboration, 3D visuals, motion graphics, and sustainable aesthetics will stay ahead of the curve.
+
+For new designers, the takeaway is simple: keep learning, stay curious, and adapt to new tools. For experienced professionals, it’s about balancing innovation with timeless design principles. No matter where you are in your journey, the future of graphic design offers endless possibilities to tell stories, build brands, and inspire audiences.
+
+<h2>FAQs</h2>
+<h3>**1. Is graphic design still a good career in 2025?**</h3>
+
+Yes, graphic design remains a growing field, with high demand in digital marketing, branding, UI/UX, and motion graphics.
+
+<h3>**2. How will AI impact graphic design jobs?**</h3>
+
+AI will support designers by automating repetitive tasks, but creativity and strategic thinking will still rely on human skills.
+
+<h3>**3. What tools should designers learn for 2025?**</h3>
+
+Popular tools include Adobe Illustrator, Figma, Blender, and AI design platforms like MidJourney and Firefly, Photoshop, XD.
+
+<h3>**4. Are 3D design skills necessary for modern designers?**</h3>
+
+While not mandatory, 3D design skills give a competitive edge as industries increasingly use immersive visuals.
+
+<h3>**5. Which industries need graphic design the most in 2025?**</h3>
+
+Tech, e-commerce, entertainment, health, and education sectors are investing heavily in design for digital growth.
+
+<h3>**6. How can beginners keep up with design trends?**</h3>
+
+Follow design blogs, take online courses, and practice regularly. Engaging in design communities also helps stay updated.
+
+
+        <h3>What kind of design projects do you work on</h3>
+        <p>I specialize in a wide range of design services including logo creation, branding, print materials, social media graphics, and web/UI design. Whether you need a simple poster or a complete brand identity,</p>
+      </article>
+      <article>
+        <h3>How do I know if you’re the right designer for me?</h3>
+        <p>Great question! If you’re looking for a designer who combines creativity with strategy, pays attention to detail, and values communication, then we’ll be a perfect match. I always make sure your ideas are heard and reflected in the final design.</p>
+      </article>
+      <article>
+        <h3>Latest Trends in Home Decoration</h3>
+        <p>Explore creative decoration ideas to make your house look stylish.</p>
+      </article>
+    </div>
+  </section>
+  <!-- About -->
+   <section id="about" style="background:url('https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?auto=format&fit=crop&w=2000&q=80') no-repeat center/cover; padding:60px 20px; font-family:Arial, sans-serif; position:relative; color:#fff;">
+  <div class="overlay" style="background:rgba(0,0,0,0.6); padding:50px; border-radius:12px; max-width:900px; margin:auto;">
+
+    <!-- Heading -->
+    <h2 style="font-size:36px; margin-bottom:20px; color:#38bdf8;">About Me</h2>
+
+    <!-- About Text -->
+    <p style="font-size:18px; line-height:1.8; margin-bottom:20px;">
+      Hello! 👋 My name is <strong>Abdullah Shahid</strong>. I am a passionate <strong>Graphic Designer</strong> who creates modern, professional, and eye-catching designs that help brands stand out. 
+      From <b>logos and posters</b> to <b>social media cards</b> and full brand identity, I bring ideas to life with unique and impactful visuals.
+    </p>
+
+    <p style="font-size:18px; line-height:1.8; margin-bottom:30px;">
+      My goal is to deliver designs that not only look beautiful but also connect with people and deliver a clear message. Creativity, quality, and client satisfaction are always my top priorities.
+    </p>
+
+    <!-- Skills -->
+    <h3 style="font-size:24px; margin-bottom:15px; color:#fbbf24;">My Skills</h3>
+    <ul style="list-style:none; padding:0; font-size:18px; line-height:1.8; margin-bottom:30px;">
+      <li>🎨 Logo & Branding Design</li>
+      <li>🖌️ Photoshop & Illustrator</li>
+      <li>💻 Web Layouts & UI Design</li>
+      <li>📊 Social Media Graphics</li>
+    </ul>
+
+    <!-- Contact Links -->
+    <h3 style="font-size:24px; margin-bottom:15px; color:#38bdf8;">Contact Me</h3>
+    <p style="font-size:18px; margin-bottom:10px;">📱 WhatsApp: <a href="https://wa.me/923026690122" style="color:#fbbf24; text-decoration:none;">302-6690122</a></p>
+    <p style="font-size:18px; margin-bottom:10px;">🌐 Facebook: <a href="https://www.facebook.com/share/1Bad2VVVCN/" style="color:#fbbf24; text-decoration:none;">Visit Page</a></p>
+    <p style="font-size:18px; margin-bottom:10px;">📸 Instagram: <a href="#" style="color:#fbbf24; text-decoration:none;">Coming Soon</a></p>
+    <p style="font-size:18px;">🎵 TikTok: <a href="#" style="color:#fbbf24; text-decoration:none;">Coming Soon</a></p>
+
+  </div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact" style="background:url(https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?) no-repeat center/cover;"></section>
+  <div style="max-width:600px; margin:auto; text-align:center;">
+    <h2 style="font-size:36px; color:#38bdf8; margin-bottom:30px;">Contact Me</h2>
+    <p>📍 Faisalabad, Pakistan</p>
+    <p>📞
++92 302 6690122 </p>
+    <p>✉️ malikabdullahshahid7@gmail.com</p>
+    <p>🔗 <a href="https://www.facebook.com/share/1Bad2VVVCN/" style="color:#fbbf24; text-decoration:none;">Facebook Page</a></p>
+  </div>
+</section>
+  <footer>
+    © 2025 My Website — All Rights Reserved
+  </footer>
+
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+      document.getElementById(pageId).classList.add("active");
+      window.scrollTo(0,0);
+    }
+  </script>
+</body>
+</html>
